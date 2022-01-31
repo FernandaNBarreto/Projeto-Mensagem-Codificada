@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decifrando mensagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Decodificador de Mensagens</h1>
+
+    <label for="mensagem1">Mensagem</label>
+    <textarea cols="30" rows="3" name="msg1" id="msg1"></textarea>
+
+    <label for="escolhaMetodo">Escolha o Método</label><br>
+    <select name="cifras" id="cifras">
+        <option value="emBranco">Escolha</option>
+        <option value="cesar" id="cCesar">Cifra de César</option>
+        <option value="base" id="b64">Base64</option>
+    </select><br>
+
+    <div class="seletorCesar" style="display: none;">
+        <p>Incremento da Cifra de César - <br>Insira o número da posição</p>
+        <input type="number" name="posiçãoCesar" id="posiçãoCesar" min="1" max="25">
+    </div>
+
+    <div class="radioType">
+        <input type="radio" name="options" value="codificar" id="codificar">
+        <label for="codificar" id="labelCodificar">Codificar</label>
+
+        <input type="radio" name="options" value="decodificar" id="decodificar">
+        <label for="decodificar" id="labelDecodificar">Decodificar</label>
+    </div>
+
+    <div class="botaomsg">
+        <input type="submit" id="submit" value="Codificar!" style="display: flex;">
+        <input type="submit" id="submit" value="Decodificar!" style="display: none;">
+    </div>
+
+    <label for="resultado" id="resultado"> </label>
+    <textarea name="msg2" id="msg2" cols="30" rows="3"></textarea>
+
+    <script src="form2.js"></script>
+</body>
+<footer class="footer">
+    <p>Desenvolvido por: Fernanda Barreto - Todos os direitos reservados - 2021 &copy;</p>
+</footer>
+
+</html>

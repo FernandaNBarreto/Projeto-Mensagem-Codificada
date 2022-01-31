@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Fira Code';
+}
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url(FiraCode-VariableFont_wght.ttf);
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: 'Fira Code';
+}
+
+body {
+    background: black;
+    color: gold;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+#msg1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.radioType {
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#msg2 {
+    margin-top: 30px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.footer {
+    position: absolute;
+    display: table;
+    left: auto;
+    margin-right: auto;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    background: black;
+    color: white;
+}
